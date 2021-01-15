@@ -10,7 +10,10 @@
     width: 180px;
     margin: 20px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
+
 .selectedPage {
     font-weight: bold;
 }
@@ -42,4 +45,20 @@
     padding: 5px 15px;
     color: #000;
     text-decoration: none;
+}
+.isFollow{
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3069d6;
+    border-radius: 3px;
+    border: none;
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+}
+.userName{
+   text-align: center;
 }

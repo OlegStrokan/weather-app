@@ -1,10 +1,8 @@
 import React from 'react';
 import styles from "./Users.module.css";
 import userPhoto from "../../assets/images/img.jpg";
-import {NavLink, Route} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import Preloader from "../common/Preloader/Preloader";
-import Profile from "../Profile/Profile";
-
 let Users = (props) => {
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize)
 
@@ -34,7 +32,12 @@ let Users = (props) => {
                          </NavLink>
                     </div>
                      <span>
-                        <div>Name: {u.name}</div>
+                        <div className={styles.userName}>Name: {u.name}</div>
+                         <div>
+                             {u.followed ?
+                                 <button onClick={() => props.unfollow(u.id)} className={styles.isFollow}>Unfollow</button> :
+                                 <button onClick={() => props.follow(u.id)} className={styles.isFollow}>Follow</button>}
+                         </div>
                     </span>
                 </span>
        </div>)}
