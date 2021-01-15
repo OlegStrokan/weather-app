@@ -1,0 +1,16 @@
+.wrapper{
+    margin: 50px auto;
+    width: 1000px;
+    background: #4a89ef;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+}
+.userPhoto{
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 40px;
+}
+div{
+    padding: 5px;
+}

@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "image": "../assets/images/img_1.jpg",
+      "name": "Oleh Strokan",
+      status: "Programmer",
+      subscribe: "Premium"
+    },
+    {
+      "id": 2,
+      "image": "../assets/images/img_2.jpg",
+      "name": "Keith Richards",
+      status: "Sex, drugs, rock-n-roll",
+      subscribe: "Premium"
+    },
+    {
+      "id": 3,
+      "image": "../assets/images/img_3.jpg",
+      "name": "Tomas Hendrix",
+      status: "Hey!",
+      subscribe: "Basic"
+    },
+    {
+      "id": 4,
+      "image": "../assets/images/img_4.jpg",
+      "name": "Freddy Mercury",
+      status: "MAMA UUUUUUU",
+      subscribe: "Basic"
+    },
+    {
+      "id": 5,
+      "image": "../assets/images/img_5.jpg",
+      "name": "Mick Jagger",
+      status: "It's only rock'n roll, but I like it",
+      subscribe: "Premium"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+.userPhoto{
+    width: 170px;
+    border-radius: 10px;
+
+}
+
+.main{
+    background: #4a89ef;
+    border-radius: 10px;
+    width: 180px;
+    margin: 20px;
+    padding: 10px;
+}
+.selectedPage {
+    font-weight: bold;
+}
+.wrapper{
+    background: #4a89ef;
+    border-radius: 10px;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 10px;
+}
+.item{
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #2c72ec;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 50px auto;
+}
+.nav{
+    background: #2c72ec;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 15px;
+    color: #000;
+    text-decoration: none;
+}
