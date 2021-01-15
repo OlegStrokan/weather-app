@@ -6,7 +6,7 @@ import ProfileContainer from "./component/Profile/ProfileContainer";
 import StartContainer from "./component/Start/StartContainer";
 
 const App = () => {
-    return   <div className='app-wrapper'>
+    return <div className='app-wrapper'>
         <Route exact path='/'
                render={ () => <StartContainer /> }/>
             <Route path='/users'

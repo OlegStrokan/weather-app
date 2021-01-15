@@ -3,6 +3,7 @@ import styles from "./Users.module.css";
 import userPhoto from "../../assets/images/img.jpg";
 import {NavLink} from "react-router-dom";
 import Preloader from "../common/Preloader/Preloader";
+import axios from "axios";
 let Users = (props) => {
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize)
 
@@ -35,8 +36,32 @@ let Users = (props) => {
                         <div className={styles.userName}>Name: {u.name}</div>
                          <div>
                              {u.followed ?
-                                 <button onClick={() => props.unfollow(u.id)} className={styles.isFollow}>Unfollow</button> :
-                                 <button onClick={() => props.follow(u.id)} className={styles.isFollow}>Follow</button>}
+                                 <button onClick={() =>{
+                                     axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{
+                                         withCredentials: true,
+                                         headers: {
+                                             "API-KEY": "6c6c5c88-772b-456e-8563-ea65435b40fb"
+                                         }
+                                     })
+                                         .then(response => {
+                                             if(response.data.redultCode === 0){
+                                                 props.unfollow(u.id)
+                                             }
+                                         })
+                                 }} className={styles.isFollow}>Unfollow</button> :
+                                 <button onClick={() =>{
+                                     axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{},{
+                                         withCredentials: true,
+                                         headers: {
+                                             "API-KEY": "6c6c5c88-772b-456e-8563-ea65435b40fb"
+                                         }
+                                     })
+                                         .then(response => {
+                                             if(response.data.redultCode === 0){
+                                                 props.follow(u.id)
+                                             }
+                                         })
+                                 }} className={styles.isFollow}>Follow</button>}
                          </div>
                     </span>
                 </span>

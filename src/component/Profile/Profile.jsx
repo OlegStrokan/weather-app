@@ -2,6 +2,7 @@ import React from 'react'
 import Preloader from "../common/Preloader/Preloader";
 import userPhoto from "../../assets/images/img.jpg";
 import styles from "./Profile.module.css";
+import {NavLink} from "react-router-dom";
 
 const Profile = (props) => {
     if (!props.profile){
@@ -19,6 +20,7 @@ const Profile = (props) => {
                 <div>UserId: {props.profile.userId}</div>
                 <div>My Github: {props.profile.contacts.github ? props.profile.contacts.github : <a href="https://github.com/OlegStrokan">https://github.com/OlegStrokan</a>}</div>
             </div>
+        <NavLink to={'/users'} className={styles.back}>Back</NavLink>
     </div>
 }
 
