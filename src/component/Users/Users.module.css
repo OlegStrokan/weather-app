@@ -22,12 +22,12 @@
     border-radius: 10px;
     margin: 10px 10px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 .item{
     cursor: pointer;
-    padding: 5px 10px;
-    margin: 5px;
+    padding: 10px 15px;
+    margin: 0 5px;
     background: #2c72ec;
     border-radius: 5px;
 }
@@ -42,8 +42,8 @@
     background: #2c72ec;
     border-radius: 5px;
     margin: 5px;
-    padding: 5px 15px;
-    color: #000;
+    padding: 10px 20px;
+    color: #fff;
     text-decoration: none;
 }
 .isFollow{

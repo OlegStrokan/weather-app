@@ -20,13 +20,16 @@ class ProfileContainer extends React.Component {
 
     render() {
         return (
-            <Profile {...this.props} profile={this.props.profile}/>
+            <Profile {...this.props} profile={this.props.profile}
+                     posts={this.props.posts}/>
         )
     }
 }
 
 let mapStateToProps = (state) => ({
-    profile: state.profilePage.profile
+    profile: state.profilePage.profile,
+    posts: state.usersPage.posts
+
 })
 
 let WithUrlDataContainerComponent = withRouter(ProfileContainer)

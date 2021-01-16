@@ -3,23 +3,4 @@
     width: 1000px;
     background: #4a89ef;
     border-radius: 10px;
-    padding: 50px;
-    display: flex;
-}
-.userPhoto{
-    border-radius: 10px;
-    width: 300px;
-    margin-right: 40px;
-}
-div{
-    padding: 5px;
-}
-.back{
-    margin-left: 225px;
-    background: #2c72ec;
-    border-radius: 5px;
-    padding: 10px 20px;
-    height: 20px;
-    color: #000;
-    text-decoration: none;
 }

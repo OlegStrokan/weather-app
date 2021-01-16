@@ -5,12 +5,13 @@ const TOGGLE_IS_FETCHING = 'TOGGLE-IS-FETCHING'
 const FOLLOW = 'FOLLOW'
 const UNFOLLOW = 'UNFOLLOW'
 
+
 let initialState = {
     users: [],
     pageSize: 8,
     currentPage: 1,
     totalUsersCount: 80,
-    isFetching: true
+    isFetching: true,
 }
 
 const usersReducer = (state = initialState, action) => {
