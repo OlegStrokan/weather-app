@@ -4,12 +4,13 @@ import userPhoto from "../../assets/images/img.jpg";
 import {NavLink} from "react-router-dom";
 import Preloader from "../common/Preloader/Preloader";
 import axios from "axios";
+
 let Users = (props) => {
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize)
 
     let pages = []
 
-    for (let i = 1; i < pagesCount; i++) {
+    for (let i = 1; i < 10; i++) {
         pages.push(i)
     }
 
@@ -36,33 +37,19 @@ let Users = (props) => {
                      <span>
                         <div className={styles.userName}>Name: {u.name}</div>
                          <div>
-                             {u.followed ?
-                                 <button onClick={() =>{
-                                     axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{
-                                         withCredentials: true,
-                                         headers: {
-                                             "API-KEY": "6c6c5c88-772b-456e-8563-ea65435b40fb"
-                                         }
-                                     })
-                                         .then(response => {
-                                             if(response.data.redultCode === 0){
-                                                 props.unfollow(u.id)
-                                             }
-                                         })
-                                 }} className={styles.isFollow}>Unfollow</button> :
-                                 <button onClick={() =>{
-                                     axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{},{
-                                         withCredentials: true,
-                                         headers: {
-                                             "API-KEY": "6c6c5c88-772b-456e-8563-ea65435b40fb"
-                                         }
-                                     })
-                                         .then(response => {
-                                             if(response.data.redultCode === 0){
-                                                 props.follow(u.id)
-                                             }
-                                         })
-                                 }} className={styles.isFollow}>Follow</button>}
+                              {u.followed
+                                  ? <button className={styles.isFollow} disabled={props.followingInProgress
+                                      .some(id => id === u.id)}
+                                            onClick={() => {
+                                                props.unfollow(u.id)
+                                            }}>
+                                      Unfollow</button>
+                                  : <button className={styles.isFollow}
+                                            disabled={props.followingInProgress.some(id => id === u.id)}
+                                            onClick={() => {
+                                                props.follow(u.id)
+                                            }}>
+                                      Follow</button>}
                          </div>
                     </span>
                 </span>

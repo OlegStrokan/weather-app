@@ -18,14 +18,14 @@ const ProfilePosts = (props) => {
     }
     return  <div className={styles.postsBlock}>
             <div className={styles.bgColor}>
-               <div className={styles.header}>My posts</div>
+               <div className={styles.header}>Comments</div>
                 <div><textarea className={styles.textarea}
                                onChange={onPostChange}
                                value={props.newPostText}
                                ref={newPostElement}>
 
            </textarea></div>
-                <button className={styles.button} onClick={onAddPost}>Add Post</button>
+                <button className={styles.button} onClick={onAddPost}>Add comment</button>
             </div>
             <div className={styles.posts}>
                 {postsElements}
