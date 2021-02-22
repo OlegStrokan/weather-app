@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import WeatherDisplay from "./WeatherDisplay";
 import {connect} from "react-redux";
 import {getWeatherData, setActivePlace, setWeatherData} from "../../redux/main-reducer";
+import s from "../../App.module.css";
 
 const WeatherDisplayContainer = (props) => {
     let name = props.places[props.activePlace]
@@ -16,12 +17,13 @@ const WeatherDisplayContainer = (props) => {
         props.getWeatherData(name)
 
     }
-    return <WeatherDisplay
+    return <div  className={s.app}>
+        <WeatherDisplay
             places={props.places}
             weatherData={props.weatherData}
             onChange={onChange}
+        /></div>
 
-        />
 }
 
 let mapStateToProps = (state) => ({

@@ -1,0 +1,36 @@
+.wrapper {
+    margin: 30px auto;
+    padding: 40px;
+    min-width: 500px;
+    max-width: 700px;
+    text-align: center;
+    background: #1b4cfa;
+    border-radius: 10px;
+    color: #fff;
+}
+.button{
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 40px 10px 10px 10px;
+    background: #484848;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+}
+.button:hover{
+    background: #212121;
+}
+p{
+    font-size: 20px;
+    margin-bottom: -3px;
+}
+hr{
+    width: 300px;
+}
+.title{
+    background: #d4d4d4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

@@ -5,7 +5,7 @@ const SET_ACTIVE_PLACE = 'SET_ACTIVE_PLACE'
 
 let initialState = {
     weatherData: null,
-    places: ["London", "Minsk", 'Moscow'],
+    places: ['London', 'Minsk', 'Moscow', 'Kiev', 'Japan'],
     activePlace: 0,
 }
 
@@ -26,7 +26,6 @@ export const setActivePlace = (activePlace) => ({type: SET_ACTIVE_PLACE, activeP
 
 export const getWeatherData = (name) => (dispatch) => {
          dataAPI.getWeatherData(name).then(response => {
-             debugger
              dispatch(setWeatherData(response))
         })
 }
