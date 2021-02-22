@@ -5,6 +5,7 @@ import {getWeatherData, setActivePlace, setWeatherData} from "../../redux/main-r
 import s from "../../App.module.css";
 
 const WeatherDisplayContainer = (props) => {
+    debugger
     let name = props.places[props.activePlace]
 
     useEffect(() => {

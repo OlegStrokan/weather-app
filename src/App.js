@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
-import MainContainer from "./components/Main/MainContainer";
+import s from './App.module.css';
+import WeatherNav from "./components/WeatherDisplay/WeatherDisplayContainer";
 
 const App = () => {
-    return <div className='wrapper'>
-        <MainContainer/>
+    return <div>
+        <WeatherNav/>
     </div>
+
 }
 
 export default App
