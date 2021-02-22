@@ -2,10 +2,11 @@ import {dataAPI} from "../api/api";
 
 const SET_WEATHER_DATA = 'SET_WEATHER_DATA'
 const SET_ACTIVE_PLACE = 'SET_ACTIVE_PLACE'
+const SET_NEW_PLACE = 'SET_NEW_PLACE'
 
 let initialState = {
     weatherData: null,
-    places: ["London", "Minsk", 'Moscow'],
+    places: ['London','Prague'],
     activePlace: 0,
 }
 
@@ -17,16 +18,19 @@ const mainReducer = (state = initialState, action) => {
         case SET_ACTIVE_PLACE: {
             return { ...state, activePlace: action.activePlace}
         }
+        case SET_NEW_PLACE: {
+            return {...state, places: [...state.places, action.newPlace]}
+        }
         default: return state
     }
 }
 
 export const setWeatherData = (weatherData) => ({type: SET_WEATHER_DATA, weatherData})
 export const setActivePlace = (activePlace) => ({type: SET_ACTIVE_PLACE, activePlace})
+export const setNewPlace = (newPlace) => ({type: SET_NEW_PLACE, newPlace})
 
 export const getWeatherData = (name) => (dispatch) => {
     dataAPI.getWeatherData(name).then(response => {
-        debugger
         dispatch(setWeatherData(response))
     })
 }

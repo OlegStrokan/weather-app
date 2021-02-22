@@ -1,7 +1,18 @@
 import React from 'react';
 import s from '../../App.module.css'
+import {Field, reduxForm} from "redux-form";
 
-const WeatherDisplay = (props) => {
+let AddPlaceForm = (props) => {
+
+    return <form onClick={props.handleSubmit}>
+        <Field className={s.input} name='newPlace' component={'input'} placeholder='Enter your city'/>
+        <button className={s.button}>Add city</button>
+    </form>
+}
+
+AddPlaceForm = reduxForm({form: 'addPlace'})(AddPlaceForm)
+
+let WeatherDisplay = (props) => {
     const weatherData = props.weatherData
     if (!weatherData) return <div>Loading...</div>;
     const weather = weatherData.weather[0]
@@ -12,7 +23,20 @@ const WeatherDisplay = (props) => {
     let sunrise = new Date(weatherData.sys.sunrise * 1000)
     let sunset = new Date(weatherData.sys.sunset * 1000);
 
-    return <div className={s.wrapper}>
+
+
+    let addPlace = (values) => {
+        if (values.newPlace === undefined) {
+            return null
+        }else{
+        props.setNewPlace(values.newPlace)
+            }
+    }
+
+
+    return <div className={s.title}>
+        <h1>My Weather App</h1>
+    <div className={s.wrapper}>
         <h1>
           {weather.main} in {weatherData.name}
           <img src={iconUrl} alt={weather.description} />
@@ -33,7 +57,10 @@ const WeatherDisplay = (props) => {
                 onClick={() => {props.onChange(index)}}>
                 {place}</button>
         ))}
+        <AddPlaceForm onSubmit={addPlace}/>
       </div>
+    </div>
 }
+
 
 export default WeatherDisplay

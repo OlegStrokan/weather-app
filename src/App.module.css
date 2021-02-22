@@ -1,8 +1,5 @@
 .wrapper {
-    margin: 30px auto;
-    padding: 40px;
-    min-width: 500px;
-    max-width: 700px;
+    padding: 10px 0 30px;
     text-align: center;
     background: #1b4cfa;
     border-radius: 10px;
@@ -23,14 +20,28 @@
     background: #212121;
 }
 p{
-    font-size: 20px;
-    margin-bottom: -3px;
+    font-size: 18px;
+    margin-bottom: -4px;
 }
 hr{
     width: 300px;
 }
 .title{
-    background: #d4d4d4;
+    background: #e9e9e9;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.input{
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none
+}
+.app{
+    min-width: 500px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
