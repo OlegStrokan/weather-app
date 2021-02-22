@@ -3,10 +3,10 @@ import thunkMiddleware from "redux-thunk"
 import mainReducer from "./main-reducer";
 
 let reducers = combineReducers({
-    main: mainReducer
+    mainPage: mainReducer
 })
 
-let store = createStore(reducers, applyMiddleware(thunkMiddleware))
+let store = createStore(reducers,applyMiddleware(thunkMiddleware))
 
 window.store = store
 
