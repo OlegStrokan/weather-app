@@ -1,33 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
-import WeatherDisplay from './components/WeatherDisplay/WeatherDisplay';
+import WeatherNav from "./components/WeatherDisplay/WeatherDisplayContainer";
 
-const PLACES = ["London", "Moscow", "Kiev", "Minsk"];
+const places = ["London", "Moscow", "Kiev", "Minsk"];
 
-export default class App extends Component {
-    state = {
-        activePlace: 0,
-    };
+const App = () => {
+return <div>
+    <WeatherNav/>
+</div>
 
-    render() {
-        const activePlace = this.state.activePlace;
-        return (
-            <div className="App">
-
-                {PLACES.map((place, index) => (
-                    <button
-                        key={index}
-                        onClick={() => {
-                            this.setState({activePlace: index});
-                        }}>
-                        {place}
-                    </button>
-                ))}
-
-                <WeatherDisplay
-                    key={activePlace}
-                    name={PLACES[activePlace]}/>
-            </div>
-        );
-    }
 }
+
+export default App
