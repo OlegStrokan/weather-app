@@ -1,6 +1,7 @@
 import React from 'react';
 import s from '../../App.module.css'
 import {Field, reduxForm} from "redux-form";
+import {NavLink} from "react-router-dom";
 
 let AddPlaceForm = (props) => {
 
@@ -36,6 +37,7 @@ let WeatherDisplay = (props) => {
 
     return <div className={s.title}>
         <h1>My Weather App</h1>
+        <div className={s.back}><NavLink to={'./'}>Back</NavLink></div>
     <div className={s.wrapper}>
         <h1>
           {weather.main} in {weatherData.name}

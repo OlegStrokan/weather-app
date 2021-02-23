@@ -1,9 +1,14 @@
 import React from 'react';
-import WeatherNav from "./components/WeatherDisplay/WeatherDisplayContainer";
+import {Route} from 'react-router-dom';
+import WeatherDisplayContainer from "./components/WeatherDisplay/WeatherDisplayContainer";
+import Documentation from "./components/Documentation/Documentation";
 
 const App = () => {
     return <div>
-        <WeatherNav/>
+        <Route exact path={'/'} render={() => <Documentation/>}/>
+        <Route path={'/main'} render={() => <WeatherDisplayContainer/>}/>
+
+
     </div>
 
 }
