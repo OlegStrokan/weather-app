@@ -39,10 +39,10 @@ let WeatherDisplay = (props) => {
         <h1>My Weather App</h1>
         <div className={s.back}><NavLink to={'./'}>Back</NavLink></div>
     <div className={s.wrapper}>
-        <h1>
-          {weather.main} in {weatherData.name}
+        <h2>
+          {weather.description} в {weatherData.name}
           <img src={iconUrl} alt={weather.description} />
-        </h1>
+        </h2>
         <p>Текущая: {weatherData.main.temp}°С</p>  <hr/>
         <p>Чувствуется как: {weatherData.main.feels_like}°С</p>  <hr/>
         <p>Максимальная: {weatherData.main.temp_max}°С</p>  <hr/>
