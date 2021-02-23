@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24797502-0b45-4ddd-923e-ffefd6f20f09" name="Default Changelist" comment="Weather app 3.2. UI correction">
+      <change afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Documentation/Documentation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Documentation/Documentation.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6ce717ce02900c1d2781fd700ca1f9d86cdba065" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectId" id="1mVz579NbWQYP7gFVWRuW89pu1e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/component" />
+      <recent name="$PROJECT_DIR$/src/Components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/components/WeatherDisplay" />
+      <recent name="$PROJECT_DIR$/src/components/WeatherDisplay/WeatherDisplay" />
+      <recent name="$PROJECT_DIR$/src/component/Profile" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24797502-0b45-4ddd-923e-ffefd6f20f09" name="Default Changelist" comment="" />
+      <created>1609593360258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609593360258</updated>
+      <workItem from="1609593361469" duration="4826000" />
+      <workItem from="1609706419893" duration="301000" />
+      <workItem from="1609748878774" duration="1278000" />
+      <workItem from="1609797202434" duration="340000" />
+      <workItem from="1610052334392" duration="3000" />
+      <workItem from="1610052380006" duration="818000" />
+      <workItem from="1610201435268" duration="26218000" />
+      <workItem from="1610447241579" duration="59000" />
+      <workItem from="1610463802491" duration="14260000" />
+      <workItem from="1610611452698" duration="240000" />
+      <workItem from="1610633714976" duration="97000" />
+      <workItem from="1610637734118" duration="27658000" />
+      <workItem from="1611047429619" duration="383000" />
+      <workItem from="1611087982774" duration="131000" />
+      <workItem from="1611134460571" duration="11251000" />
+      <workItem from="1611424678525" duration="1393000" />
+      <workItem from="1611433530425" duration="114000" />
+      <workItem from="1611511841246" duration="69000" />
+      <workItem from="1611587989110" duration="143000" />
+      <workItem from="1611853975909" duration="17000" />
+      <workItem from="1612041836100" duration="1947000" />
+      <workItem from="1612077582342" duration="66497000" />
+    </task>
+    <task id="LOCAL-00001" summary="Старт">
+      <created>1609594440458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609594440458</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Version 1.0">
+      <created>1610706692059</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610706692059</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Version 1.1. Auth/me, login of theory">
+      <created>1610728050087</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610728050087</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Version 1.2. Follow/Unfollow login + UI correct">
+      <created>1610731720691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610731720691</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Version 1.3. AddPost functional">
+      <created>1610830678364</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610830678364</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Version 1.4. React-thunk functional">
+      <created>1610909153111</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610909153111</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Version 1.5. Add redirect add HOC functional">
+      <created>1611262181500</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611262181500</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Version 1.5.1. Redirect via Compose function">
+      <created>1611262382125</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611262382125</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Version 1.0 Youtube-API Project">
+      <created>1611264764523</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611264764523</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Weather app 1.0">
+      <created>1612043146031</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612043146031</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Weather app 2.0. My version">
+      <created>1612083800456</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612083800456</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Weather app 2.0. My version">
+      <created>1613981379894</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613981379894</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Weather app 2.1. Add UI and other features">
+      <created>1614001936989</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614001936990</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Weather app 2.1. Add some functional">
+      <created>1614002774279</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614002774279</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Weather app 3.0. Add addPlace functional. Only mobile version.">
+      <created>1614016445355</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614016445356</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Weather app 3.1. Add documentation page">
+      <created>1614072005898</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614072005899</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Weather app 3.2. UI correction">
+      <created>1614075134213</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614075134213</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Старт" />
+    <MESSAGE value="Version 1.0" />
+    <MESSAGE value="Version 1.1. Auth/me, login of theory" />
+    <MESSAGE value="Version 1.2. Follow/Unfollow login + UI correct" />
+    <MESSAGE value="Version 1.3. AddPost functional" />
+    <MESSAGE value="Version 1.4. React-thunk functional" />
+    <MESSAGE value="Version 1.5. Add redirect add HOC functional" />
+    <MESSAGE value="Version 1.5.1. Redirect via Compose function" />
+    <MESSAGE value="Version 1.0 Youtube-API Project" />
+    <MESSAGE value="Weather app 1.0" />
+    <MESSAGE value="Weather app 2.0. My version" />
+    <MESSAGE value="Weather app 2.1. Add UI and other features" />
+    <MESSAGE value="Weather app 2.1. Add some functional" />
+    <MESSAGE value="Weather app 3.0. Add addPlace functional. Only mobile version." />
+    <MESSAGE value="Weather app 3.1. Add documentation page" />
+    <MESSAGE value="Weather app 3.2. UI correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Weather app 3.2. UI correction" />
+  </component>
+</project>
