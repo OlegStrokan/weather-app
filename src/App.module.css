@@ -43,7 +43,7 @@ hr{
 .app{
     min-width: 300px;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
 .documentation{
@@ -65,7 +65,7 @@ a{
     align-items: flex-end;
 }
 .back *{
-    background: #484848;
+    background: #1b4cfa;
     width: 100px;
     height: 40px;
     display: flex;
@@ -74,6 +74,7 @@ a{
     border-radius: 5px;
     margin-bottom: 10px;
     transition: .3s;
+    text-decoration: none;
 }
 .back *:hover{
     background: #212121;
