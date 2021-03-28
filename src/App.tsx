@@ -1,4 +1,4 @@
-import {React} from 'react';
+import React from 'react';
 import {Route} from 'react-router-dom';
 import WeatherDisplayContainer from "./components/WeatherDisplay/WeatherDisplayContainer";
 import Documentation from "./components/Documentation/Documentation";

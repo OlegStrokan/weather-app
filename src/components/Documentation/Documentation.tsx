@@ -2,7 +2,7 @@ import React from 'react'
 import s from '../../App.module.css'
 import {NavLink} from "react-router-dom";
 
-const Documentation = (props) => {
+const Documentation = () => {
     return <div className={s.app}>
         <div className={s.documentation}>
         <h2>Documentation</h2>

@@ -2,8 +2,18 @@ import React from 'react';
 import s from '../../App.module.css'
 import {Field, reduxForm} from "redux-form";
 import {NavLink} from "react-router-dom";
+import {WeatherData} from "../../types/types";
 
-let AddPlaceForm = (props) => {
+type PropsType = {
+    weatherData:  WeatherData | null,
+    places: Array<string>,
+    activePlace: number,
+    setNewPlace: (newPlace: string) => void,
+    setActivePlace: (activePlace: number) => void,
+    onChange: (activePlace: number) => void
+}
+
+let AddPlaceForm: React.FC = (props) => {
 
     return <form onClick={props.handleSubmit}>
         <Field className={s.input} name='newPlace' component={'input'} placeholder='Enter your city'/>
@@ -13,7 +23,7 @@ let AddPlaceForm = (props) => {
 
 AddPlaceForm = reduxForm({form: 'addPlace'})(AddPlaceForm)
 
-let WeatherDisplay = (props) => {
+let WeatherDisplay: React.FC<PropsType>  = (props) => {
     const weatherData = props.weatherData
     if (!weatherData) return <div>Loading...</div>;
     const weather = weatherData.weather[0]
@@ -26,7 +36,7 @@ let WeatherDisplay = (props) => {
 
 
 
-    let addPlace = (values) => {
+    let addPlace = (values: any) => {
         if (values.newPlace === undefined) {
             return null
         }else{
@@ -53,7 +63,7 @@ let WeatherDisplay = (props) => {
         <p>Влажность: {weatherData.main.humidity} %</p>  <hr/>
         <p>Видимость: {weatherData.visibility} м</p>  <hr/>
         <p>Давление: {weatherData.main.pressure} гПа</p>  <hr/>
-        {props.places.map((place, index) => (
+        {props.places.map((place: string, index: number) => (
             <button className={s.button}
                 key={index}
                 onClick={() => {props.onChange(index)}}>
